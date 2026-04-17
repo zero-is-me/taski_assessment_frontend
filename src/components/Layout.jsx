@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
           taSki
         </Link>
         <nav className="nav">
-          {user?.role !== "admin" && (
+          {user?.role !== "admin" && user && (
             <>
               <Link to="/events">Events</Link>
               <Link to="/wallet">Wallet</Link>
